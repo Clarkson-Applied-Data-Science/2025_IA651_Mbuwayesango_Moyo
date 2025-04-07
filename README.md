@@ -40,5 +40,29 @@ This dataset supports the development of machine learning models that can predic
 
 
 ## Process Overview
+This project was an iterative process of exploration and refinement. We started with data cleaning and EDA to understand key patterns and feature relationships. Early modeling attempts using basic classifiers revealed the need for better preprocessing, so we incorporated feature scaling and PCA to improve performance and interpretability.
+
+Along the way, we adjusted our approach based on insights—giving more weight to clinically relevant features like UPDRS_Score and Exercise_Level. These pivots helped us build a more effective model and strengthened our understanding of the data and its real-world implications.
 
 ## Exploratory Data Analysis (EDA)
+
+The dataset consists of 500 observations and 11 relevant features (excluding the Patient_ID). The X variables include demographic and clinical attributes such as Age, Gender, Tremor_Severity, Motor_Function, Speech_Difficulty, Exercise_Level, and Medications. The target variable (Y) is Disease_Progression, which classifies patients into three severity levels: mild, moderate, and severe. This defines our problem as a multi-class classification task. With a strong feature-to-observation ratio, the dataset is well-suited for building and evaluating predictive models.
+
+
+## Features
+The dataset includes the following features (columns):
+![image](https://github.com/user-attachments/assets/f199d598-1a65-4ead-b71f-75200eb9f043)
+
+## Target Variable 
+The target variable in this dataset is Disease_Progression, which classifies patients into three categories based on the severity of Parkinson’s Disease: 1 for Mild, 2 for Moderate, and 3 for Severe. It represents the progression stage of the disease and is used for multi-class classification. Predicting this variable accurately is essential for identifying patient needs, tailoring treatment plans, and enabling early interventions in managing Parkinson’s Disease.
+
+## Feature distribution 
+c![image](https://github.com/user-attachments/assets/bad3b996-188f-48ff-a092-2fc060386101)
+
+
+## Distribution of contineous variables 
+![image](https://github.com/user-attachments/assets/d0a054fb-8944-4b15-9af2-1140b888006e)
+
+
+
+
