@@ -60,8 +60,78 @@ The target variable in this dataset is Disease_Progression, which classifies pat
 c![image](https://github.com/user-attachments/assets/bad3b996-188f-48ff-a092-2fc060386101)
 
 
-## Distribution of contineous variables 
+## Distribution of continuous variables 
 ![image](https://github.com/user-attachments/assets/d0a054fb-8944-4b15-9af2-1140b888006e)
+
+## Correlation Analysis
+The correlation heatmap shows generally weak relationships between most numeric features. Years_Since_Diagnosis has a slight positive correlation with Motor_Function and Balance_Problems, while Tremor_Severity is slightly negatively correlated with Age. Notably, UPDRS_Score shows minimal correlation with Disease_Progression, suggesting that linear relationships alone may not fully explain progression severity. Overall, no strong multicollinearity was observed, and all features were retained for modeling.
+
+![image](https://github.com/user-attachments/assets/ab5110a8-e969-45a1-9fb2-6698c36b3a4e)
+
+## Feature Engineering 
+
+To enhance model performance and interpretability, we performed several feature engineering steps:
+
+Dropped non-informative columns: Removed Patient_ID as it does not carry predictive value.
+
+Categorical Encoding: Converted categorical features like Gender, Medications, and Exercise_Level into numerical format using label encoding or one-hot encoding depending on the model.
+
+Feature Scaling: Applied standardization (e.g., StandardScaler) to continuous variables such as Age and UPDRS_Score to ensure uniform scale across features.
+
+Dimensionality Reduction: Performed PCA (Principal Component Analysis) to reduce noise and better visualize feature structure during EDA.
+
+Correlation Check: Examined feature correlation to identify redundant variables, though no features were removed due to weak correlations.
+
+Target Encoding Insight: Ensured the target variable Disease_Progression was treated as a categorical class for classification models.
+
+## Principal Component Analysis (PCA)
+PCA was performed to reduce the dimensionality of the dataset and to visualize the variance explained by each component. The following chart shows the explained variance by each principal component:
+
+![image](https://github.com/user-attachments/assets/554d7ce1-ccc2-4737-b251-2df19d81806d)
+
+![image](https://github.com/user-attachments/assets/92448d00-b3de-427a-ac60-cef678ce8120)
+
+![image](https://github.com/user-attachments/assets/d363a1b7-43b4-4041-a70f-fa4a83a694c0)
+
+The PCA results indicated that approximately 90% of the variance in the dataset is explained by the first 7 principal components, suggesting that these components capture most of the meaningful information. This dimensionality reduction helped uncover the underlying structure of the data, reduced noise, and provided insights into which features contributed most to patient variability. These insights were valuable in guiding feature selection and improving the efficiency of our modeling process.
+
+## Model Fitting
+To evaluate the performance of various classification models, we split the dataset into training and testing sets using an 80/20 stratified split. Stratification ensured that each class in the target variable Disease_Progression was proportionally represented in both sets. This split ratio was chosen to maintain a sufficient number of samples for training while keeping a separate holdout set for unbiased evaluation.
+
+We performed standard preprocessing by encoding categorical variables and scaling numeric features using StandardScaler. For model selection and tuning, we applied GridSearchCV to optimize hyperparameters for Logistic Regression and Support Vector Machine (SVC). We also trained Decision Tree and Random Forest classifiers using default or manually specified parameters. Each model was evaluated using standard classification metrics including accuracy, precision, recall, F1-score, and a confusion matrix.
+
+Since this dataset is not time-based, there is no risk of data leakage due to temporal ordering. However, care was taken to ensure that no information from the test set was used during training or preprocessing to avoid any form of leakage.
+
+The motivation behind testing multiple models and performing grid search was to compare both linear and non-linear approaches, and to identify the best-performing model for predicting Parkinson’s Disease progression based on clinical and lifestyle features.
+
+## Confusion matrices for the Four models
+![image](https://github.com/user-attachments/assets/9f27a9e9-5fd6-4645-adf9-882dbde271ec)
+
+![image](https://github.com/user-attachments/assets/64e76ea8-604b-49c3-b655-5ee71062bacd)
+
+![image](https://github.com/user-attachments/assets/d4004e42-b453-4d76-b12d-fda9f9699136)
+
+![image](https://github.com/user-attachments/assets/1a3e8b60-73b2-4a08-b9dd-369345995da5)
+
+
+## ROC-AUC Curves
+![image](https://github.com/user-attachments/assets/796ce197-0e2e-4d0b-b085-28c429f7c2d4)
+
+
+## Consolidated Model Metrics
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
