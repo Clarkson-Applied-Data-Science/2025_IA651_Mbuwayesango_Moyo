@@ -93,7 +93,7 @@ PCA was performed to reduce the dimensionality of the dataset and to visualize t
 
 ![image](https://github.com/user-attachments/assets/d363a1b7-43b4-4041-a70f-fa4a83a694c0)
 
-The PCA results indicated that approximately 90% of the variance in the dataset is explained by the first 7 principal components, suggesting that these components capture most of the meaningful information. This dimensionality reduction helped uncover the underlying structure of the data, reduced noise, and provided insights into which features contributed most to patient variability. These insights were valuable in guiding feature selection and improving the efficiency of our modeling process.
+The PCA results indicated that approximately 90% of the variance in the dataset is explained by the first 9 principal components, suggesting that these components capture most of the meaningful information. This dimensionality reduction helped uncover the underlying structure of the data, reduced noise, and provided insights into which features contributed most to patient variability. These insights were valuable in guiding feature selection and improving the efficiency of our modeling process.
 
 ## Model Fitting
 To evaluate the performance of various classification models, we split the dataset into training and testing sets using an 80/20 stratified split. Stratification ensured that each class in the target variable Disease_Progression was proportionally represented in both sets. This split ratio was chosen to maintain a sufficient number of samples for training while keeping a separate holdout set for unbiased evaluation.
