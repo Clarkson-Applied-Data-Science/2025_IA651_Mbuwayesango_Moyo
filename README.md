@@ -57,7 +57,8 @@ The dataset includes the following features (columns):
 The target variable in this dataset is Disease_Progression, which classifies patients into three categories based on the severity of Parkinson’s Disease: 1 for Mild, 2 for Moderate, and 3 for Severe. It represents the progression stage of the disease and is used for multi-class classification. Predicting this variable accurately is essential for identifying patient needs, tailoring treatment plans, and enabling early interventions in managing Parkinson’s Disease.
 
 ## Feature distribution 
-c![image](https://github.com/user-attachments/assets/bad3b996-188f-48ff-a092-2fc060386101)
+![image](https://github.com/user-attachments/assets/2ff82ca5-367c-4e16-aeda-40b7ea2cda5b)
+
 
 
 ## Distribution of continuous variables 
