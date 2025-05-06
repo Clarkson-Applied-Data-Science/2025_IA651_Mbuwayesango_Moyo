@@ -105,7 +105,20 @@ Since this dataset is not time-based, there is no risk of data leakage due to te
 
 The motivation behind testing multiple models and performing grid search was to compare both linear and non-linear approaches, and to identify the best-performing model for predicting Parkinson’s Disease progression based on clinical and lifestyle features.
 
-## Confusion matrices for the Four models
+## Confusion matrices for the models
+![confusion matrix for logistic regression](https://github.com/user-attachments/assets/85c1c610-fc36-45f5-9209-b247760d7ae8)
+![confusion matrix -descision tree](https://github.com/user-attachments/assets/e3ca896a-4e3e-41aa-8065-76736c29cd4c)
+![confusion matrix -SVC](https://github.com/user-attachments/assets/729958ac-edd4-4c8c-9a12-a1afcb5f67da)
+![random forrest - confusion matrix](https://github.com/user-attachments/assets/4a9d4c19-8c39-4d18-a4bb-b0a80f03cf36)
+![Confusion matrix ensamble](https://github.com/user-attachments/assets/92a470d2-0a37-4bc9-bb88-4a2764eeaf64)
+![ensamble confusion matrix](https://github.com/user-attachments/assets/46517333-19ca-40e8-9dcf-006a243ceb79)
+![ensamble method](https://github.com/user-attachments/assets/53abbdc6-dc43-4195-a368-a665e9822223)
+
+
+
+
+
+
 
 
 
