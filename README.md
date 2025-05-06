@@ -112,7 +112,9 @@ The motivation behind testing multiple models and performing grid search was to 
 ![random forrest - confusion matrix](https://github.com/user-attachments/assets/4a9d4c19-8c39-4d18-a4bb-b0a80f03cf36)
 ![Confusion matrix ensamble](https://github.com/user-attachments/assets/92a470d2-0a37-4bc9-bb88-4a2764eeaf64)
 ![ensamble confusion matrix](https://github.com/user-attachments/assets/46517333-19ca-40e8-9dcf-006a243ceb79)
-![ensamble method](https://github.com/user-attachments/assets/53abbdc6-dc43-4195-a368-a665e9822223)
+![image](https://github.com/user-attachments/assets/31447f2c-3b85-4888-b370-1a7e7ba37345)
+
+
 
 
 
