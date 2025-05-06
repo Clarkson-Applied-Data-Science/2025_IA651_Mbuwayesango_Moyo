@@ -97,13 +97,28 @@ PCA was performed to reduce the dimensionality of the dataset and to visualize t
 The PCA results indicated that approximately 90% of the variance in the dataset is explained by the first 9 principal components, suggesting that these components capture most of the meaningful information. This dimensionality reduction helped uncover the underlying structure of the data, reduced noise, and provided insights into which features contributed most to patient variability. These insights were valuable in guiding feature selection and improving the efficiency of our modeling process.
 
 ## Model Fitting
-To evaluate the performance of various classification models, we split the dataset into training and testing sets using an 80/20 stratified split. Stratification ensured that each class in the target variable Disease_Progression was proportionally represented in both sets. This split ratio was chosen to maintain a sufficient number of samples for training while keeping a separate holdout set for unbiased evaluation.
+To assess the predictive performance of various classification algorithms, the dataset was split into training and testing subsets using an 80/20 stratified split. Stratification ensured that all classes of the target variable, Disease_Progression, were proportionally represented in both subsets. This approach preserved class distribution while providing sufficient data for both model training and unbiased performance evaluation.
 
-We performed standard preprocessing by encoding categorical variables and scaling numeric features using StandardScaler. For model selection and tuning, we applied GridSearchCV to optimize hyperparameters for Logistic Regression and Support Vector Machine (SVC). We also trained Decision Tree and Random Forest classifiers using default or manually specified parameters. Each model was evaluated using standard classification metrics including accuracy, precision, recall, F1-score, and a confusion matrix.
+Data preprocessing involved:
 
-Since this dataset is not time-based, there is no risk of data leakage due to temporal ordering. However, care was taken to ensure that no information from the test set was used during training or preprocessing to avoid any form of leakage.
+Encoding categorical variables using one-hot encoding
 
-The motivation behind testing multiple models and performing grid search was to compare both linear and non-linear approaches, and to identify the best-performing model for predicting Parkinson’s Disease progression based on clinical and lifestyle features.
+Standardizing continuous features with StandardScaler to normalize scale-sensitive models
+
+For model development, we implemented a mix of linear and non-linear classification techniques:
+
+Logistic Regression (Multinomial) and Support Vector Machine (SVC) were tuned using GridSearchCV to optimize key hyperparameters.
+
+Decision Tree and Random Forest classifiers were trained using manually selected or default hyperparameters.
+
+Additional ensemble models combining SVC, Random Forest, and Gradient Boosting were also evaluated to explore hybrid strategies.
+
+Model evaluation was based on key classification metrics: accuracy, precision, recall, F1-score (macro), and confusion matrices. Cross-validation was applied during training to assess model robustness, and we reported the mean and standard deviation of macro F1-scores across folds for comparative insight.
+
+As the dataset is non-temporal, no special handling for time-based data leakage was required. Nonetheless, strict separation between training and testing data was maintained throughout preprocessing and model fitting to prevent any form of data leakage.
+
+The rationale for evaluating multiple models and hyperparameter tuning was to benchmark both linear and non-linear methods and determine the most effective classifier for predicting the progression of Parkinson’s Disease based on clinical and lifestyle predictors.
+
 
 ## Confusion matrices for the models
 ![confusion matrix for logistic regression](https://github.com/user-attachments/assets/85c1c610-fc36-45f5-9209-b247760d7ae8)
