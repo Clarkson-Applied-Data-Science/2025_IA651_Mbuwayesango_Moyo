@@ -106,13 +106,7 @@ Since this dataset is not time-based, there is no risk of data leakage due to te
 The motivation behind testing multiple models and performing grid search was to compare both linear and non-linear approaches, and to identify the best-performing model for predicting Parkinson’s Disease progression based on clinical and lifestyle features.
 
 ## Confusion matrices for the Four models
-![image](https://github.com/user-attachments/assets/9f27a9e9-5fd6-4645-adf9-882dbde271ec)
 
-![image](https://github.com/user-attachments/assets/64e76ea8-604b-49c3-b655-5ee71062bacd)
-
-![image](https://github.com/user-attachments/assets/d4004e42-b453-4d76-b12d-fda9f9699136)
-
-![image](https://github.com/user-attachments/assets/1a3e8b60-73b2-4a08-b9dd-369345995da5)
 
 
 ## ROC-AUC Curves
