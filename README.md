@@ -140,7 +140,8 @@ The rationale for evaluating multiple models and hyperparameter tuning was to be
 
 
 ## ROC-AUC Curves
-![image](https://github.com/user-attachments/assets/a8675513-f63c-4c80-a766-49b164121a43)
+![image](https://github.com/user-attachments/assets/289eefac-a4b7-4f2e-a7ee-8de5d98e03ff)
+
 
 
 
