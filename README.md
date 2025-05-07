@@ -99,7 +99,7 @@ The PCA results indicated that approximately 90% of the variance in the dataset 
 ## Model Fitting
 To assess the predictive performance of various classification algorithms, the dataset was split into training and testing subsets using an 80/20 stratified split. Stratification ensured that all classes of the target variable, Disease_Progression, were proportionally represented in both subsets. This approach preserved class distribution while providing sufficient data for both model training and unbiased performance evaluation.
 
-Data preprocessing involved:
+### Data preprocessing involved:
 
 Encoding categorical variables using one-hot encoding
 
