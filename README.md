@@ -123,7 +123,9 @@ The rationale for evaluating multiple models and hyperparameter tuning was to be
 ## Models
 ## Logistic Regression 
 The confusion matrix for the Logistic Regression (Multinomial) model shows that the model struggles to accurately classify the three categories (Slow, Moderate, Fast).
+
 ![confusion matrix for logistic regression](https://github.com/user-attachments/assets/85c1c610-fc36-45f5-9209-b247760d7ae8)
+
 The high number of misclassifications, especially predicting "Slow" and "Moderate" as "Fast", indicates that the model has difficulty distinguishing between the classes, particularly between the slower and faster progression categories. This suggests that the model may be biased towards the "Fast" class, possibly due to an imbalance in the dataset or model limitations.
 
 ## Descision Tree 
