@@ -120,32 +120,41 @@ As the dataset is non-temporal, no special handling for time-based data leakage 
 The rationale for evaluating multiple models and hyperparameter tuning was to benchmark both linear and non-linear methods and determine the most effective classifier for predicting the progression of Parkinson’s Disease based on clinical and lifestyle predictors.
 
 
-## Confusion matrices for the models
+## Models
+## Logistic Regression 
+The confusion matrix for the Logistic Regression (Multinomial) model shows that the model struggles to accurately classify the three categories (Slow, Moderate, Fast).
 ![confusion matrix for logistic regression](https://github.com/user-attachments/assets/85c1c610-fc36-45f5-9209-b247760d7ae8)
+The high number of misclassifications, especially predicting "Slow" and "Moderate" as "Fast", indicates that the model has difficulty distinguishing between the classes, particularly between the slower and faster progression categories. This suggests that the model may be biased towards the "Fast" class, possibly due to an imbalance in the dataset or model limitations.
+
+##Descision Tree 
+The confusion matrix for the Decision Tree Classifier shows moderate performance in distinguishing between the three classes (Slow, Moderate, Fast).
 ![confusion matrix -descision tree](https://github.com/user-attachments/assets/e3ca896a-4e3e-41aa-8065-76736c29cd4c)
+Compared to the Logistic Regression model, the Decision Tree shows improved accuracy for the "Slow" class but continues to struggle with correctly identifying "Moderate" and "Fast" instances.The model has a tendency to misclassify "Moderate" cases as either "Slow" or "Fast", indicating difficulty in capturing the nuanced differences between the progression speeds.This pattern suggests that while the Decision Tree has slightly better classification of the "Slow" class compared to Logistic Regression, it still lacks consistency in correctly classifying the other classes.
+
+##SVC 
+The confusion matrix for the SVC model shows a clear pattern where the model is heavily biased towards predicting a single class.
 ![confusion matrix -SVC](https://github.com/user-attachments/assets/729958ac-edd4-4c8c-9a12-a1afcb5f67da)
+
+##Random Forrest 
+![random forrest - feature importance](https://github.com/user-attachments/assets/9059f4ad-cbcd-45e0-a9a8-274834cdceb6)
 ![random forrest - confusion matrix](https://github.com/user-attachments/assets/4a9d4c19-8c39-4d18-a4bb-b0a80f03cf36)
+
+##Ensamble -RF + SVC + XGBoost
+The confusion matrix for the Ensemble Model (Random Forest + SVC + XGBoost) shows a mixed performance in distinguishing between the three classes (Slow, Moderate, Fast).
 ![image](https://github.com/user-attachments/assets/31447f2c-3b85-4888-b370-1a7e7ba37345)
-
-
-
-
-
-
-
-
-
+The ensemble approach managed to reduce the extreme bias seen in the standalone SVC model but at the cost of introducing more confusion between the moderate and fast classes. This indicates that while the ensemble approach improves generalization, it may also blur the distinction between similar classes.
 
 
 ## ROC-AUC Curves
+The Multiclass ROC Curve plot shows the Receiver Operating Characteristic (ROC) curves for each classification model tested on the dataset. The ROC curve visually represents the trade-off between the True Positive Rate (Sensitivity) and False Positive Rate (1 - Specificity) for each model
 ![image](https://github.com/user-attachments/assets/289eefac-a4b7-4f2e-a7ee-8de5d98e03ff)
-
-
 
 
 ## Consolidated Model Metrics
 
 ![Screenshot 2025-05-06 195234](https://github.com/user-attachments/assets/4e596292-ca84-4606-b848-7d047a39cc21)
+
+
 
 
 
