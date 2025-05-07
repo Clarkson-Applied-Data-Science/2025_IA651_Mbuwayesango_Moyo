@@ -147,7 +147,8 @@ The rationale for evaluating multiple models and hyperparameter tuning was to be
 
 ## Consolidated Model Metrics
 
-![image](https://github.com/user-attachments/assets/e621225c-0208-4856-b9cf-7660ab1effa7)
+![Screenshot 2025-05-06 195234](https://github.com/user-attachments/assets/4e596292-ca84-4606-b848-7d047a39cc21)
+
 
 
 
