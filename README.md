@@ -121,14 +121,14 @@ The rationale for evaluating multiple models and hyperparameter tuning was to be
 
 
 ## Models
-## Logistic Regression 
+### Logistic Regression 
 The confusion matrix for the Logistic Regression (Multinomial) model shows that the model struggles to accurately classify the three categories (Slow, Moderate, Fast).
 
 ![confusion matrix for logistic regression](https://github.com/user-attachments/assets/85c1c610-fc36-45f5-9209-b247760d7ae8)
 
 The high number of misclassifications, especially predicting "Slow" and "Moderate" as "Fast", indicates that the model has difficulty distinguishing between the classes, particularly between the slower and faster progression categories. This suggests that the model may be biased towards the "Fast" class, possibly due to an imbalance in the dataset or model limitations.
 
-## Descision Tree 
+### Descision Tree 
 The confusion matrix for the Decision Tree Classifier shows moderate performance in distinguishing between the three classes (Slow, Moderate, Fast).
 
 
@@ -137,17 +137,17 @@ The confusion matrix for the Decision Tree Classifier shows moderate performance
 
 Compared to the Logistic Regression model, the Decision Tree shows improved accuracy for the "Slow" class but continues to struggle with correctly identifying "Moderate" and "Fast" instances.The model has a tendency to misclassify "Moderate" cases as either "Slow" or "Fast", indicating difficulty in capturing the nuanced differences between the progression speeds.This pattern suggests that while the Decision Tree has slightly better classification of the "Slow" class compared to Logistic Regression, it still lacks consistency in correctly classifying the other classes.
 
-## SVC 
+### SVC 
 The confusion matrix for the SVC model shows a clear pattern where the model is heavily biased towards predicting a single class.
 
 ![confusion matrix -SVC](https://github.com/user-attachments/assets/729958ac-edd4-4c8c-9a12-a1afcb5f67da)
 
-## Random Forrest 
+### Random Forrest 
 
 ![random forrest - feature importance](https://github.com/user-attachments/assets/9059f4ad-cbcd-45e0-a9a8-274834cdceb6)
 ![random forrest - confusion matrix](https://github.com/user-attachments/assets/4a9d4c19-8c39-4d18-a4bb-b0a80f03cf36)
 
-## Ensamble -RF + SVC + XGBoost
+### Ensamble -RF + SVC + XGBoost
 
 The confusion matrix for the Ensemble Model (Random Forest + SVC + XGBoost) shows a mixed performance in distinguishing between the three classes (Slow, Moderate, Fast).
 
