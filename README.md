@@ -125,8 +125,6 @@ The rationale for evaluating multiple models and hyperparameter tuning was to be
 ![confusion matrix -descision tree](https://github.com/user-attachments/assets/e3ca896a-4e3e-41aa-8065-76736c29cd4c)
 ![confusion matrix -SVC](https://github.com/user-attachments/assets/729958ac-edd4-4c8c-9a12-a1afcb5f67da)
 ![random forrest - confusion matrix](https://github.com/user-attachments/assets/4a9d4c19-8c39-4d18-a4bb-b0a80f03cf36)
-![Confusion matrix ensamble](https://github.com/user-attachments/assets/92a470d2-0a37-4bc9-bb88-4a2764eeaf64)
-![ensamble confusion matrix](https://github.com/user-attachments/assets/46517333-19ca-40e8-9dcf-006a243ceb79)
 ![image](https://github.com/user-attachments/assets/31447f2c-3b85-4888-b370-1a7e7ba37345)
 
 
