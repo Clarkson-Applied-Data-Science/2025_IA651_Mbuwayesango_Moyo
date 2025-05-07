@@ -166,6 +166,32 @@ The Multiclass ROC Curve plot shows the Receiver Operating Characteristic (ROC) 
 
 ![Screenshot 2025-05-06 195234](https://github.com/user-attachments/assets/4e596292-ca84-4606-b848-7d047a39cc21)
 
+### Accuracy
+
+The SVC model has the highest accuracy (0.36), indicating that it correctly predicts the class more often compared to other models.
+
+The Decision Tree and Ensemble methods both achieved 0.35 accuracy, suggesting that they performed similarly in classification tasks.
+
+### F1 Score (Macro)
+
+Decision Tree Classifier and Ensemble Model (RF + SVC + XGB) both have the highest F1 score (0.3500), indicating better balance between precision and recall compared to other models.
+
+The SVC model has a significantly lower F1 score (0.1800), reflecting its poor performance in predicting minority classes despite having the highest accuracy.
+
+### Cross-Validation Mean F1 (CV Mean F1)
+
+The Decision Tree model has the highest CV Mean F1 (0.3729), indicating that it consistently performs well across cross-validation folds.
+
+The Ensemble model also shows a strong CV Mean F1 of 0.3619, suggesting good generalization.
+
+### Cross-Validation Standard Deviation (CV Std F1)
+
+The SVC model shows the lowest standard deviation (0.0018), indicating stable performance across different data splits.
+
+In contrast, the Ensemble model shows a relatively higher standard deviation (0.0608), indicating that its performance varies more depending on the training data.
+
+
+
 
 
 
